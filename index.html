@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://kit.fontawesome.com/0cf6585b12.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Carrinho de Compras</h1>
+    <i id="verCarrinho" onclick="mostrarCarrinho()" class="fas fa-shopping-cart"></i>
+  </header>
+
+  <div class="container">
+    <!-- Lista de Produtos em Cards -->
+    <div id="produtos-container" class="produtos-container">
+      <div class="card">
+        <img src="https://placehold.co/300x200" alt="Produto 1">
+        <h3>Produto 1</h3>
+        <p>Preço: R$ 10.00</p>
+        <button class="adicionarCarrinho" onclick="adicionar('Produto 1', 10)">
+          Adicionar ao Carrinho
+        </button>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/300x200" alt="Produto 2">
+        <h3>Produto 2</h3>
+        <p>Preço: R$ 20.00</p>
+        <button class="adicionarCarrinho" onclick="adicionar('Produto 2', 20)">
+          Adicionar ao Carrinho
+        </button>
+      </div>
+      <div class="card">
+        <img src="https://placehold.co/300x200" alt="Produto 3">
+        <h3>Produto 3</h3>
+        <p>Preço: R$ 30.00</p>
+        <button class="adicionarCarrinho" onclick="adicionar('Produto 3', 30)">
+          Adicionar ao Carrinho
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
